@@ -9,7 +9,7 @@ class levelsystem(commands.Cog):
   @commands.Cog.listener()
   async def on_ready(self):
     dict = {}
-    guild = self.client.get_guild(884093430857363536)
+    guild = self.client.get_guild("InsertGuildID") #Remove the "" after inserting your Guild ID
     for channel in guild.channels:
       print("Purr~ Leveling System Online")
       messages = [message async for message in channel.history(after=datetime.today().replace(day=1))]
