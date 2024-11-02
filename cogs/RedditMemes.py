@@ -8,7 +8,7 @@ import asyncpraw as praw
 class redditmemes(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.reddit = praw.Reddit(client_id="CdQ7E_27esJHgfseu0OSBw", client_secret="6jMmCpccSWy4Qy5V5CQBNU6OLCKBkA", user_agent="script:random:v1.0 (by u/s3nl)")
+        self.reddit = praw.Reddit(client_id="Insert Reddit Client ID", client_secret="Insert Reddit Client Secret", user_agent="script:random:v1.0 (by u/InsertRedditUsername)")
     
     @commands.Cog.listener()
     async def on_ready(self):
